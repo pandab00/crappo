@@ -1,0 +1,15 @@
+:root {
+  --dark: #0d0d2b;
+  --white: #fff;
+  --blue: #3671e9;
+  --purple: #2b076e;
+}
+
+body {
+  background-color: var(--dark);
+  color: var(--white);
+  font-size: 100px;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-weight: normal;
+}
