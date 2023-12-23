@@ -1,15 +1,22 @@
-:root {
-  --dark: #0d0d2b;
-  --white: #fff;
-  --blue: #3671e9;
-  --purple: #2b076e;
+html{
+  box-sizing: border-box;
 }
 
-body {
-  background-color: var(--dark);
-  color: var(--white);
-  font-size: 100px;
-  font-family: "Open Sans", sans-serif;
-  font-family: "Rubik", sans-serif;
-  font-weight: normal;
+*,
+*::before,
+*::after{
+  box-sizing: inherit;
+}
+
+a{
+  color: inherit;
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
 }
