@@ -406,7 +406,7 @@ input:focus {
   padding-bottom: 158px;
   background-image: url(../images/bg-main.svg);
   background-repeat: no-repeat;
-  background-position: right 50% bottom -14%;
+  background-position: right 50% bottom -18%;
   background-size: contain;
 }
 
@@ -832,6 +832,14 @@ line-height: 32px;
   gap: 24px;
   max-width: 348px;
   position: relative;
+}
+
+
+.article-content__support::after {
+  position: absolute;
+  content: url(../images/support-img.svg);
+  top: 0;
+  right: -750px;
 }
 
 
