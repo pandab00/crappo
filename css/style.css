@@ -574,15 +574,9 @@ input:focus {
   display: flex;
   justify-content: space-between;
   margin-bottom: 24px;
-  position: relative;
   gap: 0 24px;
 }
-.what-else__block::before {
-  position: absolute;
-  content: url(../images/article-bg.svg);
-  top: 0;
-  right: -80vw;
-}
+
 
 
 .what-else__block p {
@@ -840,17 +834,12 @@ line-height: 32px;
   position: relative;
 }
 
-.article-content__support::before {
-  position: absolute;
-  content: url(../images/support-bg.svg);
-  top: 0;
-  right: -80vw;
-}
+
 .article-content__support::after {
   position: absolute;
   content: url(../images/support-img.svg);
   top: 0;
-  right: -45vw;
+  right: -750px;
 }
 .support__title {
   font-size: 48px;
