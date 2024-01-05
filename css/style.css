@@ -835,12 +835,6 @@ line-height: 32px;
 }
 
 
-.article-content__support::after {
-  position: absolute;
-  content: url(../images/support-img.svg);
-  top: 0;
-  right: -750px;
-}
 .support__title {
   font-size: 48px;
   font-style: normal;
