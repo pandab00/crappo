@@ -16,12 +16,15 @@
   </head>
   <body>    
     <div class="wrapper">
-        <header class="header">
+       <header class="header">
             <div class="container">
               <div class="nav">
                 <a class="logo" href="#">
                   <img class="logo__img" src="images/logo.svg" alt="логотип" />
                 </a>
+                <div class="burger__menu">
+                  <span></span>
+                </div>
                 <ul class="menu">
                   <li class="menu__list">
                     <a class="menu__link" href="#">О нас</a>
@@ -48,13 +51,13 @@
                 <button class="header__button button">Подобрать психолога</button>
               </div>
             </div>
-          </header>
+          </header> 
           <main class="article-main">
             <div class="container">
                 <ul class="bread-crumbs">
                     <li class="bread-crumbs_item"><a href="#">Главная</a></li>
                     <li class="bread-crumbs_item"><a href="index.html">Блог</a></li>
-                    <li class="bread-crumbs_item"><a href="#">Как не утонуть в тревоге и управлять своими страхами</a></li>
+                    <li class="bread-crumbs_item bread-hidden"><a href="#">Как не утонуть в тревоге и управлять своими страхами</a></li>
                   </ul>
 
                   <section class="article-content">
@@ -75,16 +78,16 @@
                         <ul class="article-content__list">
                             <li class="article-content__list-item"><a class="article-content__list-link" href="#">Как понять, что отношения с мамой были дисфункциональными и привели к травме?</a></li>
 
-                            <li class="article-content__list-item">
+                            <li class="article-content__list-item ul-none">
                               <a class="article-content__list-link" href="#">Мама привет!</a>
-                                <ul>
+                                <ul class="ul-none">
                                 
                             <li class="list-item2"><a href="#">Под под заголовок под заголовком</a></li>
                             <li class="list-item2"><a href="#">Под под под заголовок под заголовком</a></li>
                             <li class="list-item2"><a href="#">Под под под под заголовок под заголовком</a></li>
                         </ul></li>
 
-                            <li class="article-content__list-item"><a class="article-content__list-link" href="#">Ну вот опять заголовок который как «привет мама»</a></li>
+                            <li class="article-content__list-item ul-none"><a class="article-content__list-link" href="#">Ну вот опять заголовок который как «привет мама»</a></li>
                             <li class="article-content__list-item"><a class="article-content__list-link" href="#">Как понять, что вы страдаете от материнской травмы?</a></li>
                         </ul>
                     </nav>
@@ -113,6 +116,7 @@
                                 <img src="images/what-else-woman.jpg" alt="девушка">
                                  <p class="article-content__text">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</p>
                             </div>
+                            <div class="text_what">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</div>
                             <div class="exersice">
                                 <h4 class="exercise__title">Упражнение #1</h4>
                                 <p class="article-content__text">Нужно последовательно напрягать и расслаблять каждую мышцу в теле на несколько секунд. Напрягать стоит довольно сильно, чтобы потом отчетливее ощущать расслабляющий эффект. Начать можно с пальцев ног и постепенно подниматься вверх. Смысл в том, чтобы через напряжение дать стрессу выход, а затем вновь привести себя в спокойное состояние через расслабление</p>
@@ -132,6 +136,7 @@
                                 <img src="images/what-else-hands.jpg" alt="руки">
                                  <p class="article-content__text">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу.</p>
                             </div>
+                            <div class="text_what">Чем шире доступный вам репертуар реакций и чем более осознанно вы можете выбирать из него то, что лучше всего подойдет в каждой конкретной ситуации, тем больше будет ваша устойчивость к стрессу, депрессии, неопределенности, да и к жизни в целом.</div>
                             <div class="exersice exersice-2">
                                 <h4 class="exercise__title">Упражнение #2</h4>
                                 <p class="article-content__text">Нужно последовательно напрягать и расслаблять каждую мышцу в теле на несколько секунд. Напрягать стоит довольно сильно, чтобы потом отчетливее ощущать расслабляющий эффект. Начать можно с пальцев ног и постепенно подниматься вверх. Смысл в том, чтобы через напряжение дать стрессу выход, а затем вновь привести себя в спокойное состояние через расслабление</p>
@@ -242,7 +247,7 @@
                   </div>
             </div>
           </main>
-          <footer class="footer">
+           <footer class="footer">
             <div class="container">
               <div class="footer__inner">
                 <div class="footer__top">
@@ -334,4 +339,11 @@
             </div>
           </footer>
     </div>
+    <script>
+      document.querySelector('.burger__menu').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('open');
+      })
+    </script>
   </body>
+  </html>

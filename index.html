@@ -22,7 +22,10 @@
             <a class="logo" href="#">
               <img class="logo__img" src="images/logo.svg" alt="логотип" />
             </a>
-            <ul class="menu">
+            <div class="burger__menu">
+              <span></span>
+            </div>
+            <ul class="menu ">
               <li class="menu__list">
                 <a class="menu__link" href="#">О нас</a>
               </li>
@@ -49,7 +52,7 @@
           </div>
         </div>
       </header>
-      <main class="main">
+        <main class="main">
         <div class="container">
           <ul class="bread-crumbs">
             <li class="bread-crumbs_item"><a href="#">Главная</a></li>
@@ -204,7 +207,7 @@
                 >
               </div>
 
-              <div class="blog__article">
+              <div class="blog__article none">
                 <div class="blog__article-img">
                   <img
                     src="images/blog__article-img5.jpg"
@@ -229,7 +232,7 @@
                 >
               </div>
 
-              <div class="blog__article">
+              <div class="blog__article none">
                 <div class="blog__article-img">
                   <img
                     src="images/blog__article-img6.jpg"
@@ -254,7 +257,7 @@
                 >
               </div>
 
-              <div class="blog__article">
+              <div class="blog__article none">
                 <div class="blog__article-img">
                   <img
                     src="images/blog__article-img7.jpg"
@@ -280,7 +283,7 @@
                 >
               </div>
 
-              <div class="blog__article">
+              <div class="blog__article none">
                 <div class="blog__article-img">
                   <img
                     src="images/blog__article-img8.jpg"
@@ -401,5 +404,11 @@
         </div>
       </footer>
     </div>
+    <script>
+      document.querySelector('.burger__menu').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.menu').classList.toggle('open');
+      })
+    </script>
   </body>
-</html>
+  </html>
