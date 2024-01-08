@@ -1236,6 +1236,7 @@ input:focus {
   }
 
   .form {
+    padding: 0 10px;
     margin-bottom: 23px;
   }
 
@@ -1244,11 +1245,16 @@ input:focus {
   }
 
   .form__text {
-    width: 375px;
+    width: 360px;
+  }
+
+  .form__input {
+    max-width: 340px;
   }
 
   .form__button {
-    right: 10px;
+    right: 38px;
+  
   }
 
   .footer__info {
