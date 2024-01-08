@@ -1159,11 +1159,13 @@ input:focus {
   }
 }
 
-@media screen and (max-width: 414px) {
+@media screen and (max-width: 415px) {
   .container {
     max-width: 414px;
     padding: 0 20px;
   }
+
+
 
   .bread-hidden {
     text-overflow: ellipsis;
@@ -1304,6 +1306,10 @@ input:focus {
 
   .h3-block__text:first-of-type {
     margin-bottom: 16px;
+}
+
+.aside-inner {
+  justify-content: center;
 }
 
 }
