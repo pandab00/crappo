@@ -1238,6 +1238,7 @@ input:focus {
   .form {
     padding: 0 10px;
     margin-bottom: 23px;
+    max-width: 375px;
   }
 
   .form-group {
